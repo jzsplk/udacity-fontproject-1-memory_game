@@ -5050,7 +5050,7 @@ body {
 
 /* deck */
 .deck {
-  width: 400px;
+  width: 378px;
   margin: 0 auto;
   background: #fffa62;
   padding: 16px;
@@ -5070,4 +5070,11 @@ body {
     cursor: pointer;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
+    transition: transform 0.3s ease;
     line-height: 75px; }
+    .deck .card:nth-child(4n) {
+      margin: 0 0 15px 0; }
+    .deck .card:nth-child(n+13) {
+      margin: 0 15px 0 0; }
+      .deck .card:nth-child(n+13):nth-child(4n) {
+        margin: 0; }
