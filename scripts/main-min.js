@@ -1,0 +1,1 @@
+function initGame(){var e=symbols;$deck.empty();for(var n=0;n<e.length;n++)$deck.append($('<li class="card"><i>'+e[n]+"</i></li>"))}!function($){$(document).ready(function(){console.log("working"),initGame()})}(jQuery);var symbols=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"],$deck=$(".deck");
