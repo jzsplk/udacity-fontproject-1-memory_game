@@ -5078,3 +5078,13 @@ body {
       margin: 0 15px 0 0; }
       .deck .card:nth-child(n+13):nth-child(4n) {
         margin: 0; }
+    .deck .card.open {
+      transform: rotateY(0deg);
+      background: #89c4ff;
+      cursor: default; }
+    .deck .card.match {
+      background: #9bcb3c; }
+    .deck .card.show {
+      font-size: 33px; }
+    .deck .card.notmatch {
+      background: #ee0e51; }

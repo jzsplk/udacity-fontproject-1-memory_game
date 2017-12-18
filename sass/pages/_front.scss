@@ -47,5 +47,23 @@ body {
 			}
 		}
 
+		&.open {
+			transform: rotateY(0deg);
+			background: $card-opened-background;
+			cursor: default;
+		}
+
+		&.match {
+			background: $card-match-background;
+		}
+
+		&.show {
+			font-size: 33px;
+		}
+
+		&.notmatch {
+			background:$card-notmatch-background;
+		}
+
 	}
 }
