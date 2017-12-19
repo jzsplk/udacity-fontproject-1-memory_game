@@ -5062,7 +5062,7 @@ body {
     background: #ffcf7f;
     display: inline-block;
     margin: 0 15px 15px 0;
-    font-size: 1.0rem;
+    font-size: 0rem;
     color: #fff;
     text-align: center;
     border-radius: 8px;
@@ -5083,8 +5083,27 @@ body {
       background: #89c4ff;
       cursor: default; }
     .deck .card.match {
-      background: #9bcb3c; }
+      background: #9bcb3c;
+      font-size: 33px; }
     .deck .card.show {
       font-size: 33px; }
     .deck .card.notmatch {
       background: #ee0e51; }
+
+/* score-panel */
+.score-panel {
+  text-align: left;
+  width: 345px;
+  margin-bottom: 10px; }
+  .score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0; }
+    .score-panel .stars li {
+      list-style: none;
+      display: inline-block; }
+  .score-panel .restart {
+    display: inline-block;
+    float: right;
+    cursor: pointer; }

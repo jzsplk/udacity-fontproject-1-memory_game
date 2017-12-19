@@ -24,7 +24,7 @@ body {
 		// box-shadow: 5px 5px 0 0 #000;
 		display: inline-block;
 		margin: 0 15px 15px 0;
-		font-size: 1.0rem;
+		font-size: 0rem;
 		color: #fff;
 		text-align: center;
 		border-radius: 8px;
@@ -55,6 +55,7 @@ body {
 
 		&.match {
 			background: $card-match-background;
+			font-size: 33px;
 		}
 
 		&.show {
@@ -66,4 +67,31 @@ body {
 		}
 
 	}
+}
+
+/* score-panel */
+.score-panel {
+	text-align: left;
+	width: 345px;
+	margin-bottom: 10px;
+
+	.stars {
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		margin: 0 5px 0 0;
+
+		li {
+			list-style: none;
+			display: inline-block;
+		}
+	}
+
+	.restart {
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+	}
+
+
 }

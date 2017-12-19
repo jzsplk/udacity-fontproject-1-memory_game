@@ -8,6 +8,22 @@
 
 })(jQuery);
 
+// make shuffle of array
+function shuffle(array) {
+	var currentIndex = array.length, temporaryValue, randomIndex;
+
+	while(0 != currentIndex) {
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	}
+
+	return array;
+}
+
+
 //define the cards item
 var symbols = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8'],
 $deck = $('.deck'),
@@ -16,7 +32,7 @@ delay = 800;
 
 //initial game
 function initGame() {
-	var cards = symbols;
+	var cards = shuffle(symbols);
 	$deck.empty();
 	for(var i = 0; i < cards.length; i++) {
 		$deck.append($('<li class="card"><i>' + cards[i] + '</i></li>'));
