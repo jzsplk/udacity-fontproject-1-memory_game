@@ -14,14 +14,15 @@ $deck = $('.deck'),
 $scorePanel = $('.score-panel'),
 $movesNumber = $scorePanel.find('.moves'),
 $ratingStars = $scorePanel.find('i'),
+$restart = $scorePanel.find('.restart'),
 opened = [],
 delay = 800,
 match = 0,
 moves = 0,
 cardsToMatch = symbols.length / 2,
-rant3stars = cardsToMatch + 2,
-rant2stars = cardsToMatch + 6,
-rant1stars = cardsToMatch + 10;
+rant3stars = cardsToMatch + 7,
+rant2stars = cardsToMatch + 9,
+rant1stars = cardsToMatch + 11;
 
 // make shuffle of array
 function shuffle(array) {
@@ -85,6 +86,28 @@ function ratingStars(moves) {
 	return { score: rating };
 
 }
+
+//restart button
+$restart.on('click', function() {
+	swal({
+		title: '亲，确定要退出么？',
+		text: '你的记忆会丢失哦！',
+		type: 'warning',
+		showCancelButton: true,
+		confirmButtonColor: '#3085d6',
+		cancelButtonColor: '#d33',
+		confirmButtonText: '不，哥从头再来',
+	}).then(function(isConfirm) {
+		if(isConfirm.value) {
+			swal(
+				'重新开始了',
+				'GG GL',
+				'success'
+			);
+			initGame();
+		}
+	});
+});
 
 
 //flip cards
