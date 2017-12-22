@@ -110,7 +110,7 @@ $restart.on('click', function() {
 });
 
 
-//flip cards
+//flip cards logic
 $deck.on('click', '.card:not(".match, .open")', function() {
 	var $this = $(this),
 	card = $this.context.innerHTML;
@@ -120,16 +120,16 @@ $deck.on('click', '.card:not(".match, .open")', function() {
 
 	if(opened.length > 1) {
 		if(card == opened[0]) {
-			$deck.find('.open').addClass('match');
+			$deck.find('.open').addClass('match rotateInDownRight');
 			setTimeout(function() {
-				$deck.find('.match').removeClass('open show');
+				$deck.find('.match').removeClass('open show rotateInDownRight');
 			}, delay);
 			match++;
 		}
 		else {
-			$deck.find('.open').addClass('notmatch');
+			$deck.find('.open').addClass('notmatch wobble');
 			setTimeout(function() {
-				$deck.find('.open').removeClass('open show notmatch');
+				$deck.find('.open').removeClass('open show notmatch wobble');
 			}, delay);
 		}
 
