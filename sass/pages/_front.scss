@@ -1,7 +1,7 @@
 /* Front page */
 body {
 	display: flex;
-	background: $background;
+	background: #ffffff url(../images/layout/IMG_4157.jpg); /* Background pattern from Subtle Patterns */
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -12,7 +12,7 @@ body {
 .deck {
 	width: 378px;
 	margin: 0 auto;
-	background: $deck-background;
+	background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
 	padding: 16px;
 	border-radius: 10px;
 	box-shadow: 14px 14px 0 0 #000;
@@ -20,8 +20,9 @@ body {
 	.card {
 		height: 75px;
 		width: 75px;
-		background: $card-background;
-		// box-shadow: 5px 5px 0 0 #000;
+		// background: $card-background;
+		background: #2e3d49;
+		box-shadow: 5px 5px 0 0 #000;
 		display: inline-block;
 		margin: 0 15px 15px 0;
 		font-size: 0rem;
@@ -34,6 +35,10 @@ body {
 		transform-style: preserve-3d;
 		transition: transform 0.3s ease;
 		line-height: 75px;
+
+		img {
+			display: none;
+		}
 
 		&:nth-child(4n) {
 			margin: 0 0 15px 0;
@@ -55,11 +60,15 @@ body {
 
 		&.match {
 			background: $card-match-background;
-			font-size: 33px;
+			img {
+				display: inline-block;
+			}
 		}
 
 		&.show {
-			font-size: 33px;
+			img {
+				display: inline-block;
+			}
 		}
 
 		&.notmatch {

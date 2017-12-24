@@ -9,7 +9,7 @@
 })(jQuery);
 
 //define the cards item
-var symbols = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5', '6', '6', '7', '7', '8', '8'],
+var symbols = ['11', '1511', '30551', '4474349', '50982', '50983', '695118', '78182', '11', '1511', '30551', '4474349', '50982', '50983', '695118', '78182'],
 $deck = $('.deck'),
 $scorePanel = $('.score-panel'),
 $movesNumber = $scorePanel.find('.moves'),
@@ -48,7 +48,7 @@ function initGame() {
 	$movesNumber.html(moves);
 	$ratingStars.removeClass('fa-star-o').addClass('fa-star');
 	for(var i = 0; i < cards.length; i++) {
-		$deck.append($('<li class="card"><i>' + cards[i] + '</i></li>'));
+		$deck.append($('<li class="card"><img src="images/icons/' + cards[i] + '.png"></img></li>'));
 	}
 }
 
@@ -57,7 +57,7 @@ function endGame(moves, score) {
 	swal({
 			position: 'center',
 		    type: 'success',
-		    title: '大头棒棒哒！',
+		    title: 'Happy Birthday 大头！！',
 		    text: '用了 ' + moves + ' 步,' + '得到 ' + score + '星， ' + ' Winner Winner Chicken Dinner!',
 		    confirmButtonColor: '#9bcb3c',
 		    confirmButtonText: '再来一局',
@@ -120,9 +120,9 @@ $deck.on('click', '.card:not(".match, .open")', function() {
 
 	if(opened.length > 1) {
 		if(card == opened[0]) {
-			$deck.find('.open').addClass('match rotateInDownRight');
+			$deck.find('.open').addClass('match flipInX');
 			setTimeout(function() {
-				$deck.find('.match').removeClass('open show rotateInDownRight');
+				$deck.find('.match').removeClass('open show flipInX');
 			}, delay);
 			match++;
 		}
