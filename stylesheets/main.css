@@ -5049,32 +5049,6 @@ body {
   overflow: hidden; }
   body .main {
     z-index: 3; }
-  body .v-header {
-    display: flex;
-    max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center; }
-    body .v-header .video-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden; }
-      body .v-header .video-wrapper .video {
-        min-width: 100%;
-        min-height: 100%; }
-    body .v-header .video-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: #225470;
-      z-index: 0;
-      opacity: 0.1; }
 
 /* deck */
 .deck {
