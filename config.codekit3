@@ -114,6 +114,20 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/layout\/CHOCO.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/images\/layout\/CHOCO.mp4",
+		"oF": 0
+		},
+	"\/images\/layout\/CHOCO2x.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/images\/layout\/CHOCO2x.mp4",
+		"oF": 0
+		},
 	"\/images\/layout\/geometry2.png": {
 		"ft": 32768,
 		"iS": 2138,
@@ -1139,7 +1153,7 @@
 "projectAttributes": {
 	"creationDate": 535023201,
 	"displayValue": "udacity-fontproject-1-memory_game",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_brown"
 	},
 "projectSettings": {

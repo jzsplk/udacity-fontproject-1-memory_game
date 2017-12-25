@@ -5039,7 +5039,6 @@ img {
 /* Typography styles */
 /* Header */
 /* Footer */
-/* Front page */
 body {
   display: flex;
   background: #ffffff url(../images/layout/IMG_4157.jpg);
@@ -5048,6 +5047,8 @@ body {
   align-items: center;
   flex-direction: column;
   overflow: hidden; }
+  body .main {
+    z-index: 3; }
 
 /* deck */
 .deck {
@@ -5056,7 +5057,8 @@ body {
   background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
   padding: 16px;
   border-radius: 10px;
-  box-shadow: 14px 14px 0 0 #000; }
+  box-shadow: 14px 14px 0 0 #000;
+  z-index: 2; }
   .deck .card {
     height: 75px;
     width: 75px;
@@ -5099,7 +5101,12 @@ body {
 .score-panel {
   text-align: left;
   width: 345px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  z-index: 3;
+  color: #fff; }
+  .score-panel h1 {
+    text-align: center;
+    color: #fff; }
   .score-panel .stars {
     margin: 0;
     padding: 0;

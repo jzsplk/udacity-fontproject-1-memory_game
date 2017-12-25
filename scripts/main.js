@@ -90,6 +90,7 @@ function ratingStars(moves) {
 //restart button
 $restart.on('click', function() {
 	swal({
+		position: 'center',
 		title: '亲，确定要退出么？',
 		text: '你的记忆会丢失哦！',
 		type: 'warning',
