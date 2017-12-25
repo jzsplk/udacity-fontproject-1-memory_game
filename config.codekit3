@@ -10,8 +10,7 @@
 "creatorBuild": "26148",
 "files": {
 	"\/config.rb": {
-		"cB": 0,
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -113,20 +112,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/images\/layout\/CHOCO.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/images\/layout\/CHOCO.mp4",
-		"oF": 0
-		},
-	"\/images\/layout\/CHOCO2x.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/images\/layout\/CHOCO2x.mp4",
-		"oF": 0
 		},
 	"\/images\/layout\/geometry2.png": {
 		"ft": 32768,

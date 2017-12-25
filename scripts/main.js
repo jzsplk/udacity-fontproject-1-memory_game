@@ -50,15 +50,39 @@ function initGame() {
 	for(var i = 0; i < cards.length; i++) {
 		$deck.append($('<li class="card"><img src="images/icons/' + cards[i] + '.png"></img></li>'));
 	}
+	getTime();
 }
+
+//Timer
+function getTime() {
+	var startTime = new Date().getTime();
+
+	    timer = setInterval(function() {
+		var now = new Date().getTime();
+
+		//get time elapset
+		var elapset = now - startTime;
+		var minutes = Math.floor((elapset % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((elapset % (1000 * 60)) / 1000);
+
+		if(seconds < 10) {
+			seconds = "0" + seconds;
+		}
+
+		var currentTime = minutes + ":" + seconds;
+		$(".clock").text(currentTime);
+	}, 750);
+};
 
 //end Game function
 function endGame(moves, score) {
+	clearInterval(timer);
+	var time = $('.clock').text();
 	swal({
-			position: 'center',
+			position: 'left',
 		    type: 'success',
 		    title: 'Happy Birthday 大头！！',
-		    text: '用了 ' + moves + ' 步,' + '得到 ' + score + '星， ' + ' Winner Winner Chicken Dinner!',
+		    text: '用了 ' + moves + ' 步,' + '用时' + time +', 得到 ' + score + '星， ' + ' Winner Winner Chicken Dinner!',
 		    confirmButtonColor: '#9bcb3c',
 		    confirmButtonText: '再来一局',
 	}).then(function(isConfirm) {
@@ -87,6 +111,7 @@ function ratingStars(moves) {
 
 }
 
+
 //restart button
 $restart.on('click', function() {
 	swal({
@@ -105,6 +130,7 @@ $restart.on('click', function() {
 				'GG GL',
 				'success'
 			);
+			clearInterval(timer);
 			initGame();
 		}
 	});
