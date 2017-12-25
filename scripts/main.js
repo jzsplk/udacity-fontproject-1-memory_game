@@ -4,7 +4,7 @@
 	$(document).ready(function() {
 		console.log("game working");
 		initGame();
-	});
+    	});
 
 })(jQuery);
 

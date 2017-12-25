@@ -10,7 +10,7 @@ This game was built as a Udacity Course project. The purpose of the project is t
 
 ## Resources used to create the game:
 
-### Sass Compass:
+### Sass Tool:
 
 - Codekit
 

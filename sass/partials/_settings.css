@@ -1,3 +1,7 @@
-
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Airfool';
+  src: url("../sass/vendor/airfool/Airfool.otf"); }
 
 /*# sourceMappingURL=_settings.css.map */

@@ -142,6 +142,13 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cB": 0,
 		"cS": 0,
@@ -306,6 +313,20 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/sass\/vendor\/airfool\/Airfool.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/vendor\/airfool\/Airfool.otf",
+		"oF": 0
+		},
+	"\/sass\/vendor\/airfool\/AIRFOOL.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/vendor\/airfool\/AIRFOOL.txt",
+		"oF": 0
 		},
 	"\/sass\/vendor\/animate\/_animate.scss": {
 		"aP": 0,
@@ -1060,6 +1081,20 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/sass\/vendor\/first-christmas\/Christmas.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/vendor\/first-christmas\/Christmas.ttf",
+		"oF": 0
+		},
+	"\/sass\/vendor\/first-christmas\/READ.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/sass\/vendor\/first-christmas\/READ.txt",
+		"oF": 0
 		},
 	"\/scripts\/main-min.js": {
 		"ft": 64,
