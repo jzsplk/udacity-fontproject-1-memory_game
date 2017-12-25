@@ -105,8 +105,6 @@ function ratingStars(moves) {
 		$ratingStars.eq(0).removeClass('fa-star').addClass('fa-star-o');
 		rating = 0;
 	}
-	console.log(moves);
-	console.log(rating);
 	return { score: rating };
 
 }
@@ -127,7 +125,7 @@ $restart.on('click', function() {
 		if(isConfirm.value) {
 			swal(
 				'重新开始了',
-				'GG GL',
+				'Good Good Study Day Day Up',
 				'success'
 			);
 			clearInterval(timer);

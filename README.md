@@ -10,6 +10,14 @@ This game was built as a Udacity Course project. The purpose of the project is t
 
 ## Resources used to create the game:
 
+### Sass Compass:
+
+- Codekit
+
+### HTML5 template:
+
+- <https://app.pluralsight.com/player?course=designing-single-page-product-website-photoshop-html-1812&author=jan-zavrl&name=designing-single-page-product-website-photoshop-html-1812-m2&clip=15&mode=live>
+
 ### Array shuffle:
 
 - <http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array>

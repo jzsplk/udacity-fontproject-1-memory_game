@@ -5077,7 +5077,7 @@ body {
     transition: transform 0.3s ease;
     line-height: 75px; }
     .deck .card img {
-      display: inline-block; }
+      display: none; }
     .deck .card:nth-child(4n) {
       margin: 0 0 15px 0; }
     .deck .card:nth-child(n+13) {
