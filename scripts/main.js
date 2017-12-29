@@ -15,6 +15,7 @@ $scorePanel = $('.score-panel'),
 $movesNumber = $scorePanel.find('.moves'),
 $ratingStars = $scorePanel.find('i'),
 $restart = $scorePanel.find('.restart'),
+$clock = $('.clock'),
 opened = [],
 delay = 800,
 match = 0,
@@ -46,31 +47,36 @@ function initGame() {
 	match = 0;
 	moves = 0;
 	$movesNumber.html(moves);
+	$clock.text("0:00");
 	$ratingStars.removeClass('fa-star-o').addClass('fa-star');
 	for(var i = 0; i < cards.length; i++) {
 		$deck.append($('<li class="card"><img src="images/icons/' + cards[i] + '.png"></img></li>'));
 	}
-	getTime();
+
+	//one click to toggle timer
+	$deck.one('click', function() {
+		getTime();
+	});
 }
 
-//Timer
+//Timer function
 function getTime() {
 	var startTime = new Date().getTime();
 
-	    timer = setInterval(function() {
-		var now = new Date().getTime();
+    timer = setInterval(function() {
+	var now = new Date().getTime();
 
-		//get time elapset
-		var elapset = now - startTime;
-		var minutes = Math.floor((elapset % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((elapset % (1000 * 60)) / 1000);
+	//get time elapset
+	var elapset = now - startTime;
+	var minutes = Math.floor((elapset % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((elapset % (1000 * 60)) / 1000);
 
-		if(seconds < 10) {
-			seconds = "0" + seconds;
-		}
+	if(seconds < 10) {
+		seconds = "0" + seconds;
+	}
 
-		var currentTime = minutes + ":" + seconds;
-		$(".clock").text(currentTime);
+	var currentTime = minutes + ":" + seconds;
+	$clock.text(currentTime);
 	}, 750);
 };
 
@@ -174,6 +180,7 @@ $deck.on('click', '.card:not(".match, .open")', function() {
 	}
 	
 });
+
 
 
 
